@@ -1,20 +1,17 @@
-<template>
+<template lang="html">
   <div class="">
-    <titleHeader :title="title" :subTitle="subTitle" />
-    <animateExamples/>
+    <titleHeader :title="title" :subTitle="subTitle"/>
   </div>
 </template>
 
 <script>
   import titleHeader from '@/components/titleHeader'
-  import animateExamples from '@/pages/home/components/animate-example'
 
-export default {
+  export default {
     components: {
-      titleHeader,
-      animateExamples
+      titleHeader
     },
-    data () {
+    data() {
       return {
         title: 'Flexbox Grid',
         subTitle: 'Atomic design, bootstrap compatible, pure flexbox atomic design, pure flexbox.'
@@ -23,5 +20,5 @@ export default {
   }
 </script>
 
-<style lang="scss">
+<style lang="css">
 </style>
